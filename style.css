@@ -10,15 +10,36 @@ body {
     height: 100%;
 }
 
-.row {
+.row.page {
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.col-6 {
+    padding: 0;
+}
+
+.container-fluid.pomodoro-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .col-6.pomodoro {
     border-right: 1px solid beige;
 }
-
-.col-6.kanban {
-    border-right: 1px solid beige;
+button {
+    width: 150px;
 }
+
+.pomodoro-timer {
+    height: 500px;
+    width: 700px;
+    border-radius: 50%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
