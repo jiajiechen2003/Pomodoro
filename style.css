@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
 body {
-    background-color: red;
+    background-color: fuchsia;
     height: 100vh;
+    color: brown;
 }
 
 .container-fluid {
@@ -27,19 +33,45 @@ body {
 }
 
 .col-6.pomodoro {
-    border-right: 1px solid beige;
+    border-right: 20px solid red;
 }
 button {
     width: 150px;
+    background-color: yellowgreen;
+    border: 0px;
 }
 
 .pomodoro-timer {
-    height: 500px;
-    width: 700px;
+    height: 364px;
+    width: 364px;
     border-radius: 50%;
-    background-color: aqua;
+    background-color: aquamarine;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
+    border: 5px solid crimson;
+}
+
+.row.pomodoro-headings {
+    margin-bottom: 50px;
+}
+
+.row.pomodoro-headings button {
+    width: 200px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.start-button {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+#timer-start {
+    width: 384px;
+    height: 70px;
+    border-radius: 50px;
 }
 
