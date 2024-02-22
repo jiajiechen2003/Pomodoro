@@ -4,9 +4,8 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
 body {
-    background-color: fuchsia;
+    background-color: rgba(255, 255, 255, 0.836);
     height: 100vh;
-    color: brown;
 }
 
 .container-fluid {
@@ -33,10 +32,9 @@ body {
 }
 
 .col-6.pomodoro {
-    border-right: 20px solid red;
+    border-right: 1px solid rgb(189, 189, 189);
 }
 button {
-    width: 150px;
     border: 0px;
 }
 
@@ -44,12 +42,17 @@ button {
     height: 364px;
     width: 364px;
     border-radius: 50%;
-    background-color: aquamarine;
+    background-color:#caf0f8;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
-    border: 5px solid crimson;
+    margin-bottom: 60px;
+    border: 5px solid  #00b4d8; 
+}
+
+.pomodoro-timer h1 {
+    font-size: 60px;
+    color: #0077b6;
 }
 
 .row.pomodoro-headings {
@@ -60,6 +63,16 @@ button {
     width: 200px;
     height: 45px;
     font-family: 'Roboto', sans-serif;
+    background: none;
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(177, 177, 177);
+}
+
+.row.pomodoro-headings button:hover {
+    background-color: rgba(216, 216, 216, 0.466);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .start-button {
@@ -68,9 +81,18 @@ button {
     font-weight: 600;
 }
 
+.start-button button {
+    background-color: #90e0ef;
+    width: 150px;
+}
+
 #timer-start {
     width: 384px;
     height: 70px;
     border-radius: 50px;
+    color: #0077b6;
+    font-weight: 500;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
