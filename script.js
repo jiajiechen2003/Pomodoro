@@ -16,45 +16,24 @@ document.addEventListener("DOMContentLoaded", changeTimer);
 function changeTimer() {
   pomodoroButton.style.borderBottom = "1px solid rgb(177, 177, 177)";
 
-  startButton.addEventListener("click", function () {
-    startTimer(pomodoroTime);
-    time.innerHTML = formatTime(pomodoroTime);
-  })
+  
 
   pomodoroButton.addEventListener("click", function () {
-    clearInterval(timerInterval);
     changeBorderBottom();
     pomodoroButton.style.borderBottom = "1px solid rgb(177, 177, 177)";
     time.innerHTML = formatTime(pomodoroTime);
-    startButton.addEventListener("click", function () {
-      startTimer(pomodoroTime);
-      time.innerHTML = formatTime(pomodoroTime);
-      clearInterval(timerInterval);
-    })
   });
 
   shortBreakButton.addEventListener("click", function () {
-    clearInterval(timerInterval);
     changeBorderBottom();
     shortBreakButton.style.borderBottom = "1px solid rgb(177, 177, 177)";
     time.innerHTML = formatTime(shortBreakTime);
-    startButton.addEventListener("click", function () {
-      startTimer(shortBreakTime);
-      time.innerHTML = formatTime(shortBreakTime);
-      clearInterval(timerInterval);
-    })
   });
 
   longBreakButton.addEventListener("click", function () {
-    clearInterval(timerInterval);
     changeBorderBottom();
     longBreakButton.style.borderBottom = "1px solid rgb(177, 177, 177)";
     time.innerHTML = formatTime(longBreakTime);
-    startButton.addEventListener("click", function () {
-      startTimer(longBreakTime);
-      time.innerHTML = formatTime(longBreakTime);
-      clearInterval(timerInterval);
-    })
   });
 }
 
