@@ -31,7 +31,7 @@ body {
     flex-direction: column;
 }
 
-.col-6.pomodoro {
+.col-5.pomodoro {
     border-right: 1px solid rgb(189, 189, 189);
 }
 button {
@@ -96,3 +96,9 @@ button {
     letter-spacing: 2px;
 }
 
+.row.kanban-headings {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

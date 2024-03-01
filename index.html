@@ -12,7 +12,7 @@
 
 <body>
     <div class="row page">
-        <div class="col-6 pomodoro">
+        <div class="col-5 pomodoro">
             <div class="container-fluid pomodoro-container">
                 <div class="row pomodoro-headings">
                     <div class="col-4">
@@ -26,16 +26,26 @@
                     </div>
                 </div>
                 <div class="pomodoro-timer">
-                    <h1><span id="time">25:00</span></h1>
+                    <h1><span id="time"></span></h1>
                 </div>
                 <div class="start-button">
-                    <button id="timer-start">START</button>
+                    <button id="timer-start"><span id="button-text">START</span></button>
                 </div>
             </div>
         </div>
-        <div class="col-6 kanban">
+        <div class="col-7 kanban">
             <div class="container-fluid kanban-container">
-                
+                <div class="row kanban-headings">
+                    <div class="col-4">
+                        <h1>To do</h1>
+                    </div>
+                    <div class="col-4">
+                        <h1>In Progress</h1>
+                    </div>
+                    <div class="col-4">
+                        <h1>Done</h1>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
