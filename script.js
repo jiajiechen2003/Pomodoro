@@ -45,7 +45,7 @@ function changeTimerStyle() {
     pomodoroTimer.style.backgroundColor = "#fff2b2";
     pomodoroTimer.style.border = "5px solid #ffd400";
     pomodoroTimerText.style.color = "#fdc500";
-    startButton.style.color = "#ffd400";
+    startButton.style.color = "#fdc500";
     buttonBackground.style.backgroundColor = "#ffee99";
   });
 }

@@ -8,6 +8,8 @@ body {
     height: 100vh;
 }
 
+/* ----------------------------------------------- POMODORO ------------------------------------------ */
+
 .container-fluid {
     display: flex;
     justify-content: center;
@@ -96,9 +98,15 @@ button {
     letter-spacing: 2px;
 }
 
+/* ----------------------------------------------- KANBAN ------------------------------------------ */
+
 .row.kanban-headings {
     width: 100%;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.col-4.kanban-head{
+    background-color: red;
 }
