@@ -110,7 +110,7 @@ function startTimer(duration) {
       clearInterval(timerInterval);
       timerInterval = null;
       buttonText.innerHTML = "START";
-      time.innerHTML = "0:00";
+      time.innerHTML = formatTime(duration);
     } else {
       time.innerHTML = formatTime(duration);
       duration--;

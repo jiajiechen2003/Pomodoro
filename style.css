@@ -24,8 +24,10 @@ body {
     padding: 0;
 }
 
-.col-6 {
+.col-5,
+.col-7 {
     padding: 0;
+    margin: 0;
 }
 
 .container-fluid.pomodoro-container {
@@ -36,6 +38,7 @@ body {
 .col-5.pomodoro {
     border-right: 1px solid rgb(189, 189, 189);
 }
+
 button {
     border: 0px;
 }
@@ -44,12 +47,12 @@ button {
     height: 364px;
     width: 364px;
     border-radius: 50%;
-    background-color:#caf0f8;
+    background-color: #caf0f8;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 60px;
-    border: 5px solid  #00b4d8; 
+    border: 5px solid #00b4d8;
 }
 
 .pomodoro-timer h1 {
@@ -101,12 +104,36 @@ button {
 /* ----------------------------------------------- KANBAN ------------------------------------------ */
 
 .row.kanban-headings {
+    display: flex;
     width: 100%;
-    align-items: center;
+    height: 70vh;
+    align-items: start;
     justify-content: center;
     text-align: center;
+    gap: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.col-4.kanban-head{
+.title {
+    margin-top: 30px;
+    border-radius: 50px;
+}
+
+.kanban-column {
+    width: 340px;
+    height: 600px;
     background-color: red;
+    border-radius: 50px;
+}
+
+.kanban-column.to-do {
+    background-color: #3a86ff;
+}
+
+.kanban-column.in-progress {
+    background-color: #8338ec;
+}
+
+.kanban-column.done {
+    background-color: #ff006e;
 }
