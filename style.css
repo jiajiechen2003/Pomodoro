@@ -123,6 +123,8 @@ button {
     height: 600px;
     background-color: red;
     border-radius: 50px;
+    overflow-y: auto;
+    max-height: 600px;
 }
 
 .kanban-column.to-do {
@@ -152,7 +154,7 @@ button {
 
 .task {
     width: 100%;
-    height: 100px;
+    height: 150px;
     margin-top: 30px;
     border: 1px solid beige;
 }
