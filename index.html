@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -37,37 +37,24 @@
         <div class="col-7 kanban">
             <div class="container-fluid kanban-container">
                 <div class="row kanban-headings">
-                    <div class="kanban-column to-do">
+                    <div class="kanban-column to-do" ondragover="dragOver(event)" ondragenter="dragEnter(event)" ondragleave="dragLeave(event)" ondrop="dragDrop(event)">
                         <div class="title">
                             <h1>To do</h1>
                         </div>
                         <div class="add">
-                            <button type="button" class="btn btn-primary add-task">Add task</button>
-                        </div>
-                        <div class="task">
-                            <div class="task-title">
-                                <h1>Title</h1>
-                            </div>
-
-                            <div class="task-description">
-                                <h2>Description</h2>
-                            </div>
-                        </div>
-                        <div class="task">
-                            <h1>Task</h1>
-                        </div>
-                        <div class="task">
-                            <h1>Task</h1>
+                            <button type="button" class="btn btn-primary" id="add-task">
+                                <h5>Add task</h5>
+                            </button>
                         </div>
                     </div>
 
-                    <div class="kanban-column in-progress">
+                    <div class="kanban-column in-progress"  ondragover="dragOver(event)" ondragenter="dragEnter(event)" ondragleave="dragLeave(event)" ondrop="dragDrop(event)">
                         <div class="title">
                             <h1>In progress</h1>
                         </div>
                     </div>
 
-                    <div class="kanban-column done">
+                    <div class="kanban-column done"  ondragover="dragOver(event)" ondragenter="dragEnter(event)" ondragleave="dragLeave(event)" ondrop="dragDrop(event)">
                         <div class="title">
                             <h1>Done</h1>
                         </div>
