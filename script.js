@@ -211,8 +211,6 @@ function addTask() {
 
   task.addEventListener("dragstart", dragStart);
   task.addEventListener("dragover", dragOver);
-  task.addEventListener("dragenter", dragEnter);
-  task.addEventListener("dragleave", dragLeave);
   task.addEventListener("drop", dragDrop);
 }
 
