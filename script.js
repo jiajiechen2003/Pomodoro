@@ -224,19 +224,6 @@ function dragOver(event) {
   event.preventDefault();
 }
 
-function dragEnter(event) {
-  event.preventDefault();
-  if (event.target.classList.contains("kanban-column")) {
-    event.target.classList.add("hovered");
-  }
-}
-
-function dragLeave(event) {
-  event.preventDefault();
-  if (event.target.classList.contains("kanban-column")) {
-    event.target.classList.remove("hovered");
-  }
-}
 
 function dragDrop(event) {
   event.preventDefault();
