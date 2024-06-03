@@ -210,9 +210,16 @@ function addTask() {
   });
 
   task.addEventListener("dragstart", dragStart);
-  task.addEventListener("dragover", dragOver);
-  task.addEventListener("drop", dragDrop);
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const kanbanColumns = document.querySelectorAll(".kanban-column");
+
+  kanbanColumns.forEach(column => {
+    column.addEventListener("dragover", dragOver);
+    column.addEventListener("drop", dragDrop);
+  });
+});
 
 function dragStart(event) {
   event.dataTransfer.setData("text/plain", event.target.id);
@@ -222,13 +229,11 @@ function dragOver(event) {
   event.preventDefault();
 }
 
-
 function dragDrop(event) {
   event.preventDefault();
   const taskId = event.dataTransfer.getData("text/plain");
   const draggedTask = document.getElementById(taskId);
   if (event.target.classList.contains("kanban-column")) {
     event.target.appendChild(draggedTask);
-    event.target.classList.remove("hovered");
   }
 }
