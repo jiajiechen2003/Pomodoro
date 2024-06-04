@@ -165,9 +165,6 @@ function addTask() {
 
   task.id = "task-" + Math.floor(Math.random() * 1000);
   task.classList.add("task");
-  task.classList.add("draggable");
-  taskTitle.classList.add("task-title");
-  taskDescription.classList.add("task-description");
   confirmButton.classList.add("btn", "btn-success");
   deleteButton.classList.add("btn", "btn-danger");
   task.setAttribute("draggable", "true");
